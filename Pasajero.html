@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+    
+    *{
+            scrollbar-width: none;
+        }        
+
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #000000;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+       
+        
+        nav {
+    background-image: url(imgbarnav.png);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 45px;
+    font-size: 30px;
+    text-align: right;
+}
+
+nav ul li a {
+
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    text-align: center;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+/* Alineación del logotipo */
+.alinear-izquierda {
+    margin-left: 10px;
+}
+
+/* Asegurarse de que el logotipo esté centrado verticalmente */
+nav img {
+    vertical-align: middle;
+}
+        
+        main {
+            max-width: 1500px;
+            margin: 0 auto;
+            margin: 0;
+    padding: 0;
+    background-image: url("https://fastly.4sqi.net/img/general/600x600/40774135_aSPsf4LKIYmvwDa6aUh9STGko7qjBFb5hSabU-K22tY.jpg"); /* Reemplaza 'tu-imagen.jpg' con la URL de tu imagen */
+    background-size: cover; /* Ajusta la imagen al tamaño del cuerpo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen de fondo */
+    font-family: Arial, sans-serif; /* Cambia la fuente de texto según tus preferencias */
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+}
+
+
+
+        
+        
+        section {
+            background-color: #07006d;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgb(0, 0, 0);
+        }
+        
+        footer {
+            background-color: #000985;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            height: 50px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0e008f;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #01b3b3;
+            box-shadow: 0px 0px 10px rgb(0, 0, 0);
+            border-radius: 5px;
+        }
+        
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        /* Estilos para los campos del formulario */
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        /* Estilos para el botón de enviar */
+        input[type="submit"] {
+            background-color: #00ac0e;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+
+
+        
+        /* Estilos adicionales según tu preferencia */
+        /* Puedes agregar más estilos personalizados aquí */
+        
+        </style>
+        <script>
+            function mostrarImagen() {
+                // Muestra la imagen cambiando el estilo CSS
+                document.getElementById("imagenResultado").style.display = "block";
+            }
+            </script>
+            
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario de Pasajero</title>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <a href="Index.html"><img class="alinear-izquierda" src="logoODM.png" alt="" height="70px" width="110px"></a>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#">Formularios</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Pasajero.html">Pasajero</a></li>
+                        <li><a href="Conductor.html">Conductor</a></li>
+                        <li><a href="Rutas.html">Rutas</a></li>
+                        <li><a href="Camion.html">Camion</a></li>
+                        <li><a href="Empleados.html">Empleados</a></li>
+    
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+
+    
+    <div class="container">
+        <h1>Formulario de Pasajero</h1>
+        <form action="tabla_pasajero.html" method="POST" onsubmit="mostrarImagen();">
+
+            <div class="form-group">
+                <label for="id_pasajero">ID de Pasajero:</label>
+                <input type="text" id="id_pasajero" name="id_pasajero" required>
+            </div>
+            <div class="form-group">
+                <label for="nombrecompleto">Nombre Completo:</label>
+                <input type="text" id="nombrecompleto" name="nombrecompleto" required>
+            </div>
+            <div class="form-group">
+                <label for="FechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="FechaNacimiento" name="FechaNacimiento" required>
+            </div>
+            <div class="form-group">
+                <label for="Numero Camion">Numero de Camion:</label>
+                <input type="number" id="Numero Camion" name="Numero Camion">
+            </div>
+            <div class="form-group">
+                <label for="Horario viaje">Horario de viaje:</label>
+                <input type="date" id="Horario viaje" name="Horario viaje">
+            </div>
+            <div class="form-group">
+                <label for="INE">INE:</label>
+                <input type="text" id="INE" name="INE" required>
+            </div>
+            <div class="form-group">
+                <label for="costo boleto">Costo de Boleto:</label>
+                <input type="number" id="costo boleto" name="costo boleto">
+            </div>
+            <div class="form-group">
+                <label for="Numero asiento">Numero de Asiento:</label>
+                <input type="number" id="Numero asiento" name="Numero asiento">
+            </div>
+            <div class="form-group">
+                <center><input type="submit" value="Enviar"></center>
+                <img id="imagenResultado" src="Fotos_bases_datos/tabla_pasajero.png" alt="Imagen de resultado" height="100px"width=¨auto¨ style="display: none;">
+
+                <section>
+                    <footer>
+                        <h1><p>Jurado Garcia Hiram Jaziel  5I</p></h1>
+                    </footer>
+                </section>
+        
+</body>
+</html>
